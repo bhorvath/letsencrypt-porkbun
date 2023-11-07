@@ -25,6 +25,8 @@ def main() -> None:
     url = os.getenv("API_URL", DEFAULT_API_URL) + "/ssl/retrieve/" + domain
     r = requests.post(url, json={"apikey": api_key, "secretapikey": secret_key})
 
+    os.umask(0o066)
+
     data = r.json()
     if data["status"] == "ERROR":
         logging.error(data["message"])

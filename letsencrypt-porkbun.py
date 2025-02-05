@@ -7,7 +7,7 @@ import sys
 import requests
 
 # https://porkbun.com/api/json/v3/documentation
-DEFAULT_API_URL = "https://porkbun.com/api/json/v3"
+DEFAULT_API_URL = "https://api.porkbun.com/api/json/v3"
 DEFAULT_CERTIFICATE_PATH = "/ssl/fullchain.pem"
 DEFAULT_PRIVATE_KEY_PATH = "/ssl/privkey.pem"
 
